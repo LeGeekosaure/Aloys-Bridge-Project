@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="icon" type="image/png" href="image/icon.png">
+  <title>La Menuiserie</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+  <div class="background-image"></div>
+<div class="header">
+  <h1>LA MENUISERIE</h1>
+  <h2>Le travail du bois</h2>
+  <button id="toggle-dark-mode">🌙 Mode sombre</button>
+</div>
+
+<div class="topnav">
+  <a href="bridge.html">Accueil</a>
+  <a href="Synopsis.html">Synopsis</a>
+  <a href="décors.html">Décors</a>
+  <a href="structure.html">Structures</a>
+  <a href="menuiserie.html">Menuiserie</a>
+  <a href="modelism.html">Modélisme</a>
+  <a href="peinture.html">Peinture</a>
+  <a href="résultat.html">Résultats</a>
+  <a href="https://www.m-ea.eu/wp-content/uploads/2024/12/FR_Reglement_OSCAR_2024_25-1.pdf" style="float:right">Le règlement du concours</a>
+  <a href="FAQ.html" style="float:right">FAQ</a>
+</div>
+
+<!-- Le bouton pour ouvrir le menu latéral -->
+<button class="openbtn" onclick="toggleNav()">☰</button>
+
+<!-- Le menu latéral -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+  <div id="page-title" class="page-title"></div> <!-- Titre de la page -->
+  <a href="bridge.html">Accueil</a>
+  <a href="Synopsis.html">Synopsis</a>
+  <a href="décors.html">Décors</a>
+  <a href="structure.html">Structures</a>
+  <a href="menuiserie.html">Menuiserie</a>
+  <a href="modelism.html">Modélisme</a>
+  <a href="peinture.html">Peinture</a>
+  <a href="résultat.html">Résultats</a>
+  <div class="sidenav-bottom">
+    <a href="FAQ.html">FAQ</a>
+    <a href="https://www.m-ea.eu/wp-content/uploads/2024/12/FR_Reglement_OSCAR_2024_25-1.pdf">Le règlement<br>du concours</a>
+    <div>
+      <button id="login-btn" class="button">Connexion admin</button>
+      <button id="logout-btn" style="display: none;">Se déconnecter</button>     
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Le Plan</h2>
+      <h4>Avant de commencer il faut dessiner !</h4>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/plan.jpg" alt="Plan dessiné pour la menuiserie du projet" width="100%" />
+      </div>
+      <p>Pour pouvoir faire de la menuiserie, il faut toujours avoir un plan avant pour savoir quoi faire.</p>
+    </div>
+    <div class="card">
+      <h2>Présentation du matériel</h2>
+      <h4>Avant de commencer il faut préparer :</h4>
+      <h4>- Le bois</h4>
+      <p>Pour commencer, il faut bien choisir son type de bois selon les besoins, tels que la résistance ou le poids. Nous sommes donc partis sur une planche de pin, qui a une résistance satisfaisante pour sa masse, assez avantageuse pour un concours où chaque gramme compte.</p>
+      <div class="image">
+
+        <img src="image/aloys/4Menuiserie/planche.JPG" alt="Planche de pin utilisée pour la construction" width="100%" />
+      </div>
+      <h4>- Les outils</h4>
+      <p>Suite au choix du bois, on doit préparer les outils. Pour ce genre de travail, on utilisera des outils simples comme une scie sous table DIY (Do It Yourself) qui peut couper précisément des coupes droites avec un angle de 90 à 45°, un choix idéal pour ce travail. Il faut aussi des outils plus manuels comme des marteaux, des clous et de la colle pour réaliser l'assemblage.</p>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/scie.JPG" alt="Scie sous table DIY utilisée pour la découpe du bois" width="100%" />
+      </div>
+      <p></p>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/armoire.JPG" alt="Armoire de rangement des outils" width="100%" />
+      </div>
+      <h4>- L'emplacement</h4>
+      <p>Et pour le grand final, l'emplacement, le "saint établi", l'endroit où l'on fait tous les travaux de base et où tout est toujours rangé (enfin, normalement).</p>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/etabli.JPG" alt="Établi utilisé pour la menuiserie" width="100%" />
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>La découpe</h2>
+      <h4>(Le plus fun !)</h4>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/base.jpg" alt="Premières découpes du bois pour l’assemblage" width="100%" />
+      </div>
+      <p>Première étape dans le travail du bois (après la mesure), c'est la découpe, ce qui est vachement cool et dangereux.</p>
+    </div>
+
+    <div class="card">
+      <h2>L'assemblage</h2>
+      <h4>(Pour le coup, c'est pas fun)</h4>
+      <div class="image">
+   
+<img src="image/aloys/4Menuiserie/a.jpg" alt="Utilisation de serre-joints d'angles pour assembler les tasseaux" width="100%" />
+      </div>
+      <p></p>
+      <center>Utilisation de serre-joints d'angles pour avoir les tasseaux d'équerre.</center>
+      <p></p>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/b.jpg" alt="Assemblage des tasseaux avec colle et clous" width="100%" />
+      </div>
+      <p></p>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/c.jpg" alt="Séchage de l’assemblage sous serre-joints" width="100%" />
+      </div>
+      <p></p>
+      <center>Utilisation de serre-joints pour laisser reposer la colle.</center>
+      <p></p>
+      <p>Une étape très importante dans le travail du bois. L'assemblage où la précision est l'importance même et où l'on voit enfin le résultat de notre création. Le matériel utilisé est des clous et de la colle.</p>
+    </div>
+
+    <div class="card">
+      <h2>Le résultat</h2>
+      <h4>(Presque final)</h4>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/d.jpg" alt="Résultat brut avant peinture et fixation" width="100%" />
+      </div>
+      <p></p>
+      <div class="image">
+        <img src="image/aloys/4Menuiserie/e.jpg" alt="Résultat final de la structure assemblée" width="100%" />
+      </div>
+      <p>Voici le résultat brut. La véritable fin sera la peinture puis la fixation. Et nous voilà à la fin du périple d'un apprenti menuisier. Dédicace au grand-père d'Enzo qui nous a bien aidés pour la fabrication de cette pièce.</p>
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>À propos</h3>
+      <div class="imageb">
+        <img src="image\icon.png" alt="Logo du geekosaure" width="100%">
+      </div>
+      <p>Je suis un passionné d’ingénierie et de modélisme, avec une forte admiration pour les jeux vidéo comme Horizon Zero Dawn. Ce site est le fruit de mon projet scolaire, où je combine ces deux passions pour créer un modèle de pont inspiré des mécaniques des jeux. Mon objectif est de partager ce projet, d’expliquer le processus de conception et de modélisation, tout en mettant en lumière l'interconnexion entre la technologie et l’art.</p>
+<p>J'espère que ce projet pourra inspirer d’autres passionnés et leur montrer que la créativité et la technologie peuvent s’entrelacer pour donner naissance à des œuvres innovantes.</p>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <h3>Copyright 2025 by: Lombard Enzo</h3>
+</div>
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+<script src="java\script.js"></script>
+
+</body>
+</html>

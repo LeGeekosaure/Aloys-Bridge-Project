@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="icon" type="image/png" href="image/icon.png">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+  <div class="background-image"></div>
+<div class="header">
+  <h1>FAQ</h1>
+  <h2>Les questions fréquemment posées</h2>
+  <button id="toggle-dark-mode">🌙 Mode sombre</button>
+</div>
+
+<div class="topnav">
+  <a href="bridge.html">Accueil</a>
+  <a href="Synopsis.html">Synopsis</a>
+  <a href="décors.html">Décors</a>
+  <a href="structure.html">Structures</a>
+  <a href="menuiserie.html">Menuiserie</a>
+  <a href="modelism.html">Modélisme</a>
+  <a href="peinture.html">Peinture</a>
+  <a href="résultat.html">Résultats</a>
+  <a href="https://www.m-ea.eu/wp-content/uploads/2024/12/FR_Reglement_OSCAR_2024_25-1.pdf" style="float:right">Règlement du concours</a>
+  <a href="FAQ.html" style="float:right">FAQ</a>
+</div>
+
+<!-- Le bouton pour ouvrir le menu latéral -->
+<button class="openbtn" onclick="toggleNav()">☰</button>
+
+<!-- Le menu latéral -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+  <div id="page-title" class="page-title"></div> <!-- Titre de la page -->
+  <a href="bridge.html">Accueil</a>
+  <a href="Synopsis.html">Synopsis</a>
+  <a href="décors.html">Décors</a>
+  <a href="structure.html">Structures</a>
+  <a href="menuiserie.html">Menuiserie</a>
+  <a href="modelism.html">Modélisme</a>
+  <a href="peinture.html">Peinture</a>
+  <a href="résultat.html">Résultats</a>
+  <div class="sidenav-bottom">
+    <a href="FAQ.html">FAQ</a>
+    <a href="https://www.m-ea.eu/wp-content/uploads/2024/12/FR_Reglement_OSCAR_2024_25-1.pdf">Le règlement<br>du concours</a>
+    <div>
+      <button id="login-btn" class="button">Connexion admin</button>
+      <button id="logout-btn" style="display: none;">Se déconnecter</button>     
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Un projet, mais dans quel but ?</h2>
+      <h4>Participer au concours Oscar</h4>
+      <div class="image">
+        <img src="image/aloys/8FAQ/affiche.png" alt="Affiche du concours Oscar mettant en avant le thème des ponts pour le projet scolaire" width="100%">
+      </div>
+      <p>Ce concours, projet de notre année scolaire de seconde, a pour but de nous faire rêver tout en visant la victoire.</p>
+    </div>
+    <div class="card">
+      <h2>Qui sont les acteurs du projet?</h2>
+      <h4>Romain Guyot</h4> 
+      <p>Inspecteur des travaux fini</p>
+      <p></p>
+      <h4>Lysandre Pertuzot</h4> 
+      <p>Architecte</p>
+      <p></p>
+      <h4>Mathéo Henry</h4> 
+      <p>Fournisseur de matière première</p>
+      <p></p>
+      <h4>Emilie Peter</h4> 
+      <p>Peintre</p>
+      <p></p>
+      <h4>Enzo Lombard</h4> 
+      <p>Ingénieur</p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>Quels outils as-tu utilisés pour créer ce projet ?</h2>
+      <h4>Blender et SolidWorks</h4>
+      <div class="image">
+        <img src="image/aloys/8FAQ/logo.png" alt="Logo du logiciel blender" width="100%">
+        <img src="https://img.icons8.com/?size=100&id=62397&format=png&color=000000" alt="Logo du logiciel SolidWorks" width="100%">
+      </div>
+      <p>Voici les deux logiciel que j'ai utilisé pour ce projet Blender pour les personnages et SolidWorks pour les plans.</p>
+      <p>logo de SLW pris sur <a href="https://icones8.fr/icons">icons8</a></p>
+    </div>
+    <div class="card">
+      <h2>Pourquoi avoir choisi l’inspiration de Horizon Zero Dawn</h2>
+      <h4>Un jeu que j'aprécie</h4>
+      <p>Horizon zero dawn doit être le jeu que j'aprécie le plus et l'un des seuls ou je suis proche de le 100%.</p>
+    </div>
+
+    <div class="card">
+       <!-- Zone pour afficher les questions -->
+    <div id="questions-list">
+      <h2>Questions</h2>
+      <!-- Les questions seront affichées ici dynamiquement -->
+  </div>
+  <hr>
+      <form id="question-form">
+        <label for="question"><h4 class="X">Pas de réponse à votre question ? Posez la votre :</h4></label>
+        <input type="text" id="question" required>
+        <button type="submit">Envoyer</button>
+      </form>
+
+  </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>À propos</h3>
+      <div class="imageb">
+        <img src="image/icon.png" alt="Logo du geekosaure" width="100%">
+      </div>
+      <p>Je suis un passionné d’ingénierie et de modélisme, avec une forte admiration pour les jeux vidéo comme Horizon Zero Dawn. Ce site est le fruit de mon projet scolaire, où je combine ces deux passions pour créer un modèle de pont inspiré des mécaniques des jeux. Mon objectif est de partager ce projet, d’expliquer le processus de conception et de modélisation, tout en mettant en lumière l'interconnexion entre la technologie et l’art.</p>
+<p>J'espère que ce projet pourra inspirer d’autres passionnés et leur montrer que la créativité et la technologie peuvent s’entrelacer pour donner naissance à des œuvres innovantes.</p>
+
+    </div>
+  </div>
+</div>
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+<div class="footer">
+  <h3>Copyright 2025 by: Lombard Enzo</h3>
+</div>
+
+<script type="module" src="java/FAQ.js"></script>
+<script src="java/script.js"></script>
+
+</body>
+</html>

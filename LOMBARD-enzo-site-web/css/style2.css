@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'Horizon';
+    src: url('Horizon.ttf') format('truetype')
+  }
+
+  @font-face {
+    font-family: 'txt';
+    src: url('square-721-bt.ttf') format('truetype')
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1; /* S'assurer que l'image est derrière le contenu */
+    transition: filter 0.3s;
+  }
+  
+  body.dark-mode .background-image {
+    filter: brightness(0.4); /* Applique le filtre uniquement à l'image de fond */
+  }
+  
+  body {
+    font-family: 'arial';
+    padding: 10px;
+    background-color: #ffffff; /* Couleur de fond pour le mode clair */
+    color: #000000; /* Couleur de texte pour le mode clair */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #toggle-dark-mode {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.page-title {
+  position: absolute;
+  top: 30px;  /* Ajuste l'espacement vertical par rapport au haut */
+  left: 35px; /* Positionne le titre à côté de la croix */
+  font-size: 20px;
+  color: #70288e;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;  /* Empêche le titre de se couper sur plusieurs lignes */
+  margin: 0;
+  padding: 0;
+  font-family: 'Horizon';
+}
+
+.dark-mode .page-title {
+  color:#d7c0e1
+}
+
+  body.dark-mode {
+    color: #ffffff;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5a4dbe;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5a4dbe;
+    color: white;
+    cursor: pointer; 
+    border-radius: 4px;
+  }
+  
+  .dark-mode button {
+    background-color: #343052;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #70288e;
+    font-family: 'Horizon';
+  }
+  .dark-mode h1{
+    color: #d7c0e1
+  }
+      
+  /* En-tête de la page web */
+  .header {
+    font-family: 'Horizon';
+    padding: 30px;
+    text-align: center;
+    background-image: url("fond2.png");
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative; /* Nécessaire pour appliquer z-index */
+    z-index: 6
+  }
+  .dark-mode .header {
+    background-color: #333;
+    filter: brightness(0.4); /* Applique le filtre uniquement à l'image de fond */
+  }
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  .header h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #d7c0e1;
+    font-family: 'Horizon';
+  }
+
+  .dark-mode h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #d7c0e1;
+    font-family: 'Horizon';
+  }
+  
+  a {
+    font-family: 'Horizon';
+    color: #70288e;
+  }
+
+  .dark-mode a {
+    color: #d7c0e1;;
+  }
+  
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #70288e;
+    font-family: 'Horizon';
+  }
+  
+  h3 {
+    font-family: 'arial';
+    font-size: 30px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Style de la barre de navigation principale */
+  .topnav {
+    overflow: hidden;
+    background-color: #24225c;
+    transition: top 0.3s;
+     z-index: 6;
+     margin-bottom: 0px;
+  }
+  .dark-mode .topnav {
+    background-color: #1e1e1e;
+  }
+  /* Style des liens de la barre de navigation principale */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dark-mode .topnav a {
+    color: #c5e4ff;
+  }
+  
+  /* Changement de couleur quand on passe au-dessus */
+  .topnav a:hover {
+    background-color: #343363;
+    color: #fff;
+  }
+  
+  /* Création de 2 colonnes inégales flottant côte à côte */
+  /* Colonne gauche */
+  .leftcolumn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Colonne droite */
+  .rightcolumn {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Image */
+  .image {
+    position: relative;
+    display: inline-block;
+    max-width: 75%;
+    background-color: #c5e4ff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .dark-mode .imageb {
+    background-color: #102a41; /* Fond plus sombre pour le conteneur en mode sombre */
+    filter: brightness(0.7);
+  }
+  
+  .imageb {
+    max-width: 50%;
+    background-color: #c5e4ff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .imageb img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .alt-text {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    display: none;
+    pointer-events: none; /* Empêche d'interagir avec */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+  }
+  
+  
+  
+  .imageb .alt-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    display: none;
+    pointer-events: none; /* Empêche d'interagir avec le tooltip */
+  }
+  
+  .imageb:hover .alt-text {
+    display: block;
+  }
+  
+  /* Ajoute des cartes pour encadrer les sujets */
+  .card {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative; /* Nécessaire pour appliquer z-index */
+    z-index: 4; /* Les cartes restent sous le bouton */
+    font-family: 'txt'
+  }
+  
+  .dark-mode .card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  /* Arrange les colonnes flottantes */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Pied de page */
+  .footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  
+  }
+  
+  .indexed {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    
+  }
+    
+  /* Menu latéral */
+  .sidenav {
+    height: 100vh; /* Hauteur complète de l'écran */
+    width: 250px;
+    position: fixed;
+    z-index: 6; /* Corrige le double z-index */
+    top: 0;
+    left: -250px;
+    background-color: #24225c;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+  
+    display: flex;
+    flex-direction: column; /* Organise en colonne */
+    justify-content: space-between; /* Répartit l’espace */
+  }
+  .dark-mode .sidenav {
+  background-color: #242424;
+}
+
+  /* Style des liens dans le menu latéral */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.3s;
+  }
+  .dark-mode .sidenav a {
+    color: #c5e4ff;
+  }
+  
+  .sidenav a:hover {
+    background-color: #343363;
+    color: white;
+  }
+  
+  .sidenav-bottom {
+    margin-top: auto; /* Pousse la section en bas */
+    padding-bottom: 70px; /* Ajoute un peu d'espace en bas */
+  }
+  
+  /* Bouton pour ouvrir le menu */
+  .openbtn {
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    z-index: 5;
+  }
+  
+  /* Bouton pour fermer le menu */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 7
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
