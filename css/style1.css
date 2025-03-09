@@ -1,6 +1,7 @@
 	@font-face {
   font-family: 'Horizon';
   src: url('Horizon.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'txt';
