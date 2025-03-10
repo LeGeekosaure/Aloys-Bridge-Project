@@ -444,7 +444,7 @@ input[type="text"] {
   }
 }
 
-@media(max-width: 840px) {
+@media(max-width: 450px) {
   .leftcolumn, .rightcolumn {
     width: 90%;
     padding: 0;
