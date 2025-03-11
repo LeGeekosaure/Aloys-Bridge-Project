@@ -455,4 +455,7 @@ input[type="text"] {
   button, .openbtn{
     z-index: 6;
   }
+  .header{
+    max-height: 10%;
+  }
 }
