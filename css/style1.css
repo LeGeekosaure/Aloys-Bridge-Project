@@ -453,8 +453,8 @@ input[type="text"] {
     display: none
   }
   button, .openbtn{
-    z-index: 5;
-    width: 100px;
-    height: 100px
+    z-index: 6;
+    width: 25px;
+    height: 25px
   }
 }
