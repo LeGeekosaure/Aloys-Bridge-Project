@@ -387,12 +387,17 @@
       padding: 0;
     }
   }
+
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .topnav a {
+  @media(max-width: 450px) {
+    .leftcolumn, .rightcolumn {
       float: none;
       width: 100%;
+      padding: 0;
     }
-  }
-  
+    .topnav{
+      display: none
+    }
+    button, .openbtn{
+      z-index: 6;
+    }
