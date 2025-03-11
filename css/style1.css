@@ -454,7 +454,5 @@ input[type="text"] {
   }
   button, .openbtn{
     z-index: 6;
-    width: 25px;
-    height: 25px
   }
 }
