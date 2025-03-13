@@ -453,6 +453,6 @@ input[type="text"] {
   .background-image {
     position: fixed;
     background-image: url("fond3.jpg");
+    background-size:cover;
   }
 }
- 
