@@ -100,7 +100,7 @@ h1 {
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   position: relative; /* Nécessaire pour appliquer z-index */
-  z-index: 6
+  z-index: 6 
 }
 .dark-mode .header {
   background-color: #333;
