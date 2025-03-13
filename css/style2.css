@@ -114,7 +114,7 @@
     text-align: center;
     background-image: url("fond2.png");
     background-color: rgb(255, 255, 255);
-    background-size: cover;
+    background-size: cover; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     position: relative; /* Nécessaire pour appliquer z-index */
     z-index: 6
@@ -411,5 +411,8 @@
       left: 0;
       width: 100%;
       height: 100%;
+    }
+    .imageb {
+      max-width: 75%;
     }
 }
