@@ -8,11 +8,6 @@
   src: url('square-721-bt.ttf') format('truetype')
 }
 .background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url("fond.jpg");
   background-repeat: no-repeat;
   background-size: cover;
