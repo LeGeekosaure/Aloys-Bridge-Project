@@ -401,4 +401,13 @@
     button, .openbtn{
       z-index: 6;
     }
+    .background-image {
+      position: fixed;
+      background-image: url("fond3.jpg");
+      background-size:cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
