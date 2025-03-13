@@ -415,4 +415,7 @@
     .imageb {
       max-width: 75%;
     }
+    .footer{
+      color: dimgray
+    }
 }
