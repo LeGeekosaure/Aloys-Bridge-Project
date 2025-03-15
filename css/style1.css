@@ -469,4 +469,11 @@ input[type="text"] {
   .footer, .indexed{
     color: dimgray
   }
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  .header h2 {
+    font-size: 20px;
+  }
 }
