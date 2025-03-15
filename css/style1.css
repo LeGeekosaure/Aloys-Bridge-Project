@@ -302,7 +302,14 @@ input[type="text"] {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   position: relative; /* Nécessaire pour appliquer z-index */
   z-index: 4; /* Les cartes restent sous le bouton */
-  font-family: 'txt'
+  font-family: 'txt';
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sidenav-header {

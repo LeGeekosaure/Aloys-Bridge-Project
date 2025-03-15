@@ -33,7 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      card.classList.add("show");
+    }, index * 200);
+  });
+});
 
 // Fonction pour ouvrir/fermer le menu latéral
 function toggleNav() {
@@ -87,12 +94,3 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const video = document.getElementById("myVideo");
-
-    video.addEventListener("ended", function () {
-        video.pause();  // Met la vidéo en pause
-        video.currentTime = 0; // Retourne à 0
-        video.play();  // Relance immédiatement
-        });
-    });
