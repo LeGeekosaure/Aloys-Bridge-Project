@@ -7,6 +7,12 @@
   font-family: 'txt';
   src: url('square-721-bt.ttf') format('truetype')
 }
+@supports (-webkit-touch-callout: none) {
+  .background-image {
+    background-attachment: scroll !important;
+  }
+}
+
 .background-image {
   position: fixed;
   top: 0;
