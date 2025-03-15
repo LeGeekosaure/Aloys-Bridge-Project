@@ -297,17 +297,9 @@
     padding: 20px;
     text-align: center;
     margin-top: 20px;
-  
+    font-family: 'Horizon';
   }
   
-  .indexed {
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
-    
-  }
     
   /* Menu latéral */
   .sidenav {

@@ -367,7 +367,7 @@ input[type="text"] {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
-
+  font-family: 'Horizon';
 }
 
 .indexed {
@@ -376,6 +376,7 @@ input[type="text"] {
   text-align: center;
   position: fixed;
   bottom: 0px; 
+  font-family: 'Horizon';
 }
   
 /* Menu latéral */
