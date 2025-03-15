@@ -236,12 +236,15 @@ input[type="text"] {
   margin-left: auto;
   margin-right: auto;
   text-align: center; /* Assure que les images à l'intérieur soient bien centrées */
+  transition: transform 0.3s ease-in-out;
 }
 .dark-mode .image {
   background-color: #102a41; /* Fond plus sombre pour le conteneur en mode sombre */
   filter: brightness(0.7);
 }
-
+.image img:hover {
+  transform: scale(1.05);
+}
 .image img {
   display: block;
   max-width: 100%;
