@@ -216,7 +216,7 @@
     padding-left: 20px;
   }
   
-  .imageb img:hover {
+  .imageb:hover {
     transform: scale(1.05);
   }
   .dark-mode .imageb {
