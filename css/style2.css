@@ -216,9 +216,6 @@
     padding-left: 20px;
   }
   
-  .imageb:hover {
-    transform: scale(1.05);
-  }
   .dark-mode .imageb {
     background-color: #102a41; /* Fond plus sombre pour le conteneur en mode sombre */
     filter: brightness(0.7);
@@ -230,7 +227,6 @@
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    transition: transform 1s ease-in-out;
   }
   .imageb img {
     display: block;
