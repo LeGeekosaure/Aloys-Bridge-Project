@@ -132,6 +132,9 @@ a {
   font-family:'txt';
   color: #000000;
 }
+.dark-mode .X{
+  color: white
+}
 .card2 {
   background-color: #c5e4ff71;
     padding: 20px;
@@ -470,9 +473,8 @@ input[type="text"] {
     color: dimgray
   }
   .header h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
-  
   .header h2 {
     font-size: 20px;
   }
