@@ -108,6 +108,21 @@ h1 {
   position: relative; /* Nécessaire pour appliquer z-index */
   z-index: 6 
 }
+.frflag {
+  position:absolute;
+  top: 10px;
+  right: 89px;
+}
+.deflag {
+  position:absolute;
+  top: 10px;
+  right: 10px;
+}
+.enflag {
+  position:absolute;
+  top: 10px;
+  right: 47px;
+}
 .dark-mode .header {
   background-color: #333;
   filter: brightness(0.4); /* Applique le filtre uniquement à l'image de fond */

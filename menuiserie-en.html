@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="image/icon.png">
+  <title>The Carpentry</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+  <div class="background-image"></div>
+<div class="header">
+  <h1>THE CARPENTRY</h1>
+  <h2>The Woodworking</h2>
+  <button id="toggle-dark-mode">🌙 Dark Mode</button>
+  <a class="frflag" href="menuiserie.html"><img src="https://flagcdn.com/fr.svg" alt="Français" height="24px" width="32"></a>
+  <a class="deflag" href="menuiserie-all.html"><img src="https://flagcdn.com/de.svg" alt="Allemand" height="24px" width="32"></a>
+  <a class="enflag" href="menuiserie-en.html"><img src="https://flagcdn.com/us.svg" alt="Anglais" height="24px" width="32"></a>
+</div>
+
+<div class="topnav">
+  <a href="index-en.html">Home</a>
+  <a href="idees-en.html">Ideas</a>
+  <a href="synopsis-en.html">Synopsis</a>
+  <a href="décors-en.html">Scenery</a>
+  <a href="structure-en.html">Structures</a>
+  <a href="menuiserie-en.html">Carpentry</a>
+  <a href="modelsim-en.html">Model Making</a>
+  <a href="peinture-en.html">Painting</a>
+  <a href="résultat-en.html">Milestones</a>
+  <a href="https://www.m-ea.eu/wp-content/uploads/2024/12/FR_Reglement_OSCAR_2024_25-1.pdf" style="float:right">Contest Rules</a>
+  <a href="FAQ.html" style="float:right">FAQ</a>
+</div>
+
+<!-- The button to open the side menu -->
+<button class="openbtn" onclick="toggleNav()" aria-label="Side menu">☰</button>
+
+<!-- The side menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+  <div id="page-title" class="page-title"></div> <!-- Page title -->
+  <a href="index-en.html">Home</a>
+  <a href="idees-en.html">Ideas</a>
+  <a href="synopsis-en.html">Synopsis</a>
+  <a href="décors-en.html">Scenery</a>
+  <a href="structure-en.html">Structures</a>
+  <a href="menuiserie-en.html">Carpentry</a>
+  <a href="modelsim-en.html">Model Making</a>
+  <a href="peinture-en.html">Painting</a>
+  <a href="résultat-en.html">Milestones</a>
+  <div class="sidenav-bottom">
+    <a href="FAQ.html">FAQ</a>
+    <a href="https://www.m-ea.eu/wp-content/uploads/2024/12/FR_Reglement_OSCAR_2024_25-1.pdf">Contest<br>Rules</a>
+    <hr>
+    <center>
+      <button id="login-btn" class="button">Admin Login</button>
+      <button id="logout-btn" style="display: none;">Logout</button>     
+    </center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>The Plan</h2>
+      <h4>Before starting, you need to draw!</h4>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/plan.jpg" alt="Plan drawn for the carpentry project" width="100%" />
+      </div>
+      <p>To do carpentry, you always need to have a plan first to know what to do.</p>
+    </div>
+    <div class="card">
+      <h2>Material Presentation</h2>
+      <h4>Before starting, you need to prepare:</h4>
+      <h4>- The wood</h4>
+      <p>First, you need to choose the type of wood according to the needs, such as strength or weight. We chose a pine board, which has a satisfactory resistance for its mass, quite advantageous for a competition where every gram counts.</p>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/planche.JPG" alt="Pine board used for construction" width="100%" />
+      </div>
+      <h4>- The tools</h4>
+      <p>After choosing the wood, we need to prepare the tools. For this kind of work, we will use simple tools such as a DIY table saw that can cut precise straight cuts with angles from 90 to 45°, an ideal choice for this task. We also need more manual tools like hammers, nails, and glue for assembly.</p>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/scie.JPG" alt="DIY table saw used for wood cutting" width="100%" />
+      </div>
+      <p></p>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/armoire.JPG" alt="Tool storage cabinet" width="100%" />
+      </div>
+      <h4>- The workspace</h4>
+      <p>And for the grand finale, the workspace, the "holy bench," the place where all the basic work is done and where everything is always (well, usually) organized.</p>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/etabli.JPG" alt="Workbench used for carpentry" width="100%" />
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>The Cutting</h2>
+      <h4>(The most fun part!)</h4>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/base.jpg" alt="First wood cuts for assembly" width="100%" />
+      </div>
+      <p>The first step in woodworking (after measuring) is cutting, which is pretty cool and dangerous.</p>
+    </div>
+
+    <div class="card">
+      <h2>The Assembly</h2>
+      <h4>(This part is not fun)</h4>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/a.jpg" alt="Using angle clamps to assemble the slats" width="100%" />
+      </div>
+      <p></p>
+      <center>Using angle clamps to make sure the slats are square.</center>
+      <p></p>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/b.jpg" alt="Assembling slats with glue and nails" width="100%" />
+      </div>
+      <p></p>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/c.jpg" alt="Drying the assembly under clamps" width="100%" />
+      </div>
+      <p></p>
+      <center>Using clamps to let the glue rest.</center>
+      <p></p>
+      <p>This is a very important step in woodworking. Assembly, where precision is key, and where we finally see the result of our creation. The materials used are nails and glue.</p>
+    </div>
+
+    <div class="card">
+      <h2>The Result</h2>
+      <h4>(Almost final)</h4>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/d.jpg" alt="Raw result before painting and fixation" width="100%" />
+      </div>
+      <p></p>
+      <div class="image">
+        <img loading="lazy" src="image/aloys/4Carpentry/e.jpg" alt="Final result of the assembled structure" width="100%" />
+      </div>
+      <p>Here is the raw result. The real finish will be the painting and fixation. And we have reached the end of the journey of an apprentice carpenter. Shoutout to Enzo's grandfather who helped us a lot in the making of this piece.</p>
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>About</h3>
+      <div class="imageb">
+        <img src="image\icon.png" alt="Geekosaurus logo" width="100%">
+      </div>
+      <p>Welcome to our website!</p>
+      <p>We are L’Éclipse, a group of enthusiasts combining creativity, ingenuity, and teamwork to bring unique projects to life. Whether through modeling, creating dioramas, or digital design, we always strive to step out of the shadows… to leave a mark.</p>
+      <p>Our name, L’Éclipse, symbolizes that rare moment when everything aligns perfectly. This is what we aim for with each creation: a balance between technique, aesthetics, and innovation.</p>
+      <p>Each member brings their touch, ideas, and skills. Together, we move forward, experiment, and learn. This site reflects our approach: simple, clear, and focused on the essentials.</p>
+      <p>Explore our projects, discover our universe, and dive into the L’Éclipse adventure.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <h3>Copyright 2025 by: L'Éclipse</h3>
+  <p>Other copyrights:
+    <br>
+    Background for large screen: Guerrilla Games
+    <br>
+    Background for small screen: <a href="https://www.peakpx.com">"https://www.peakpx.com"</a>
+    <br>
+    Icons: LeGeekosaure
+  </p>
+</div>
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+<script src="java\script.js"></script>
+
+</body>
+</html>
